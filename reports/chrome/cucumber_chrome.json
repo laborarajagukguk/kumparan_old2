@@ -1,0 +1,74 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As a User, I can see news",
+    "line": 1,
+    "id": "as-a-user,-i-can-see-news",
+    "tags": [],
+    "uri": "tests/features/kumparan_news/open_news.feature",
+    "elements": [
+      {
+        "id": "as-a-user,-i-can-see-news;open-news-from-trending",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Open News from Trending",
+        "tags": [
+          {
+            "name": "@happy",
+            "line": 6
+          },
+          {
+            "name": "@news",
+            "line": 6
+          },
+          {
+            "name": "@kumparan",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is at kumparan home page",
+            "match": {
+              "location": "tests/step_definitions/login_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user click trending at kumparan home page",
+            "match": {
+              "location": "tests/step_definitions/news_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user can read news at news page",
+            "match": {
+              "location": "tests/step_definitions/news_steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12148000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
